@@ -27,10 +27,10 @@ function Home() {
   return (
     <div name='home' className='w-full h-screen bg-[#0a192f] '>
       {/* Container */}
-      <div className='flex h-full'>
+      <div className='flex h-screen w-screeen'>
       <div className='mx-auto px-8 flex flex-col justify-center mr-4'>
         <p className='text-purple-500 text-2xl '>Hi, my name is</p>
-        <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
+        <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] '>
           Chandrakethan
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>
@@ -41,11 +41,8 @@ function Home() {
             Passionate about innovative solutions and eager for exciting projects.
         </p>
         <div>
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-purple-600 hover:border-purple-600 rounded' onClick={handleButtonClick}>
+          <button className='border-2 border-purple-600 rounded-lg px-3 py-2 text-purple-400 cursor-pointer hover:bg-purple-600 hover:text-purple-200' onClick={handleButtonClick}>
             View Work
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3 ' />
-            </span>
           </button>
         </div>
         </div>

@@ -13,14 +13,14 @@ const About = () => {
           <div></div>
           </div>
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div className='sm:text-right text-4xl font-bold'>
+            <div className='hidden lg:block text-4xl font-bold'>
               <p>Hi. I'm Chandrakethan, nice to meet you. Please take a look around.</p>
             </div>
             <div>
               <p>
               Third-year IT undergrad at VNRVJIET, passionate about crafting impactful software that elevates lives. 
               Proficient in Python, C++, Java, and JavaScript. I express my expertise through technical blogs and creative Snapchat filters.
-               Envision having a versatile software expert at your fingertips—ready to turn ideas into reality!
+              Envision having a versatile software expert at your fingertips ready to turn ideas into reality!
               </p>  
             </div>
           </div>

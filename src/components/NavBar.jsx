@@ -7,7 +7,8 @@ import {
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -15,40 +16,36 @@ const NavBar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-
-        <Link to="/home"className="text-2xl text-bold">Chandrakethan</Link>
-
-
+      <h2 className="text-2xl text-bold cursor-pointer">Chandrakethan</h2>
+      
       {/* menu */}
       <ul className='hidden md:flex '>
         <li className=' hover:text-purple-500'>
-          <Link to='home' smooth={true} duration={500}>
+          <ScrollLink to='home' smooth={true} duration={500}>
             Home
-          </Link>
+          </ScrollLink>
         </li>
         <li className=' hover:text-purple-500'>
-          <Link to='about' smooth={true} duration={500}>
+          <ScrollLink to='about' smooth={true} duration={500}>
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li className=' hover:text-purple-500'>
-          <Link to='skills' smooth={true} duration={500}>
+          <ScrollLink to='skills' smooth={true} duration={500}>
             Skills
-          </Link>
+          </ScrollLink>
         </li>
         <li className=' hover:text-purple-500'>
-          <Link to='work' smooth={true} duration={500}>
+          <ScrollLink to='work' smooth={true} duration={500}>
             Work
-          </Link>
+          </ScrollLink>
         </li>
         <li className=' hover:text-purple-500'>
-          <Link to='contact' smooth={true} duration={500}>
+          <ScrollLink to='contact' smooth={true} duration={500}>
             Contact
-          </Link>
+          </ScrollLink>
         </li>
-        <li>
-            
-        </li>
+        <li></li>
       </ul>
 
       {/* Hamburger */}
@@ -61,33 +58,29 @@ const NavBar = () => {
         className={ !nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}
       >
         <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+          <ScrollLink onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
-          </Link>
+          </ScrollLink>
         </li>
         <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+          <ScrollLink onClick={handleClick} to='about' smooth={true} duration={500}>
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+          <ScrollLink onClick={handleClick} to='skills' smooth={true} duration={500}>
             Skills
-          </Link>
+          </ScrollLink>
         </li>
         <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+          <ScrollLink onClick={handleClick} to='work' smooth={true} duration={500}>
             Work
-          </Link>
+          </ScrollLink>
         </li>
         <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <ScrollLink onClick={handleClick} to='contact' smooth={true} duration={500}>
             Contact
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
 
@@ -97,6 +90,8 @@ const NavBar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-blue-600 p-3 rounded-md'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
+              target='_blank'
+              rel='noopener noreferrer'
               href='https://www.linkedin.com/in/chandrakethan-sivarathri-a90924219/'
             >
               Linkedin <FaLinkedin size={30} />
@@ -105,6 +100,8 @@ const NavBar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#333333] p-3 rounded-md'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
+              target='_blank'
+              rel='noopener noreferrer'
               href='https://github.com/chandrakethan27'
             >
               Github <FaGithub size={30} />
@@ -113,8 +110,9 @@ const NavBar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#565f69] p-3 rounded-md'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='
-              https://drive.google.com/file/d/1Jt609ciCRF6FqKBbFHFdMsDoaJDjUZdC/view?usp=sharing'
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://drive.google.com/file/d/1Jt609ciCRF6FqKBbFHFdMsDoaJDjUZdC/view?usp=sharing'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
